@@ -4,13 +4,13 @@ import json
 import sys
 
 # api-endpoint 
-#URL = "https://jsonplaceholder.typicode.com/posts"
-#r=requests.get(url = URL, params=None)
-#a =  json.loads(r.content)
+URL = "https://jsonplaceholder.typicode.com/posts"
+r=requests.get(url = URL, params=None)
+a =  json.loads(r.content)
 #print(a['userId'])
 outfile={}
-#with open("web.json", 'w') as outfile:
-#	json.dump(a, outfile)
+with open("web.json", 'w') as outfile:
+	json.dump(a, outfile)
 json_file={}
 with open("web.json") as json_file:
 	data = json.load(json_file)
